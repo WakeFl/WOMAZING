@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина / WOMAZING</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="areaForLoader">
+        <div class="preloader">
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__overlay" id="modal__overlay"></div>
+        <div class="modal__window">
+            <form action="mail.php" class="modal__form  js-form" id="modal-form">
+                <h3 class="modal__title">Заказать обратный звонок</h3>
+                <input type="text" class="modal__input" name="name" placeholder="Имя">
+                <input type="email" class="modal__input" name="email" placeholder="E-mail">
+                <input type="tel" class="modal__input" name="phoneNumber" placeholder="Телефон">
+                <button  type="submit" class="modal__btn" id="close" data-submit >Заказать звонок</button>
+                <button type="button" class="modal__close"></button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-complete">
+        <div class="modal-complete__overlay" id="modal__overlay"></div>
+        <div class="modal-complete__window">
+            <h3 class="modal-complete__title">Отлично! Мы скоро вам перезвоним.</h3>
+            <button type="button" class="modal-complete__btn">Закрыть</button>
+        </div>
+    </div>
+    <header class="header header-goods none-back">
+        <div class="nav-menu">
+            <div class="container container-flex">
+                    <a href="index.html" class="logo"></a>
+                <nav class="main-navigation">
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item dropdown ">
+                            <a class="nav__link " href="shop.html">Магазин</a>
+                            <div class="dropdown-content">
+                                <a href="#">Пальто</a>
+                                <a href="#">Свитшоты</a>
+                                <a href="#">Кардиганы</a>
+                                <a href="#">Толстовки</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="about.html">О бренде</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="contacts.html">Контакты</a>
+                        </li> 
+                    </ul>
+                </nav>
+                <div class="tel">
+                    <button type="button" class="tel__images">
+                        <img src="img/telephone 1.svg" class="tel__img" alt="">
+                        <img src="img/Grouptel.svg" class="tel__img tel__img_hover" alt="">
+                    </button>
+                    <a class="tel__number" href="tel:+74958235412">+7 (495) 823-54-12</a>
+                </div>
+                <a class="cart" href="сart.html"></a>
+                <div class="burger">
+                    <button type="button" class="burger__btn"><img class="burger__img" src="/img/8497425.png" alt=""></button>
+                    <div class="burger__menu">
+                        <nav class="burger__wrapper">
+                            <ul class="nav burger__nav">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="index.html">Главная</a>
+                                </li>
+                                <li class="nav__item dropdown ">
+                                    <a class="nav__link " href="shop.html">Магазин</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="about.html">О бренде</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="contacts.html">Контакты</a>
+                                </li> 
+                                <li class="nav__item">
+                                    <a class="nav__link" href="cart.html">Корзина</a>
+                                </li> 
+                                <li class="nav__item nav__link_tel">
+                                    <button type="button" class="nav__link tel__link" >Заказать звонок</button>
+                                </li> 
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="offer-cart">
+                <h1 class="offer-cart__title">Корзина</h1>
+                <ul class="offer-shop__driblets">
+                    <li class="offer-shop__driblet">
+                        <a href="index.html" class="offer-shop__link">Главная</a>
+                    </li>
+                    <li class="offer-shop__driblet offer-shop__driblet_separator">
+                        —
+                    </li>
+                    <li class="offer-shop__driblet">
+                        <span class="offer-shop__link_active">Корзина</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="shopping">
+        <div class="container">
+            <div class="overflow">
+                <table class="cart-items">
+                    <tr class="cart-items__head">
+                        <th class="cart-goods table-head">Товар</th>
+                        <th class="cart-prices table-head">Цена</th>
+                        <th class="cart-quatities table-head">Количество</th>
+                        <th class="cart-current-price table-head">Всего</th>
+                    </tr>
+                    <tr class="cart-items__buy">
+                        <th class="cart-items__goods cart-goods">
+                            <div class="cart-items__wrapper">
+                                <button class="cart-items__delete"><img src="img/Vector 3cross.svg" alt="" srcset=""></button>
+                                <a class="cart-items__link" href="goods.html">
+                                    <img src="img/Фото товара.png" alt="" class="cart-items__img">
+                                    <p class="cart-items__name">Футболка USA</p>
+                                </a>
+                            </div>
+                        </th>
+                        <th class="cart-items__prices cart-prices">$129</th>
+                        <th class="cart-items__quatities cart-quatities"> <input class="cart-items__number add-cart__number" type="number" name="quantity" step="1" min="1" value="1"></th>
+                        <th class="cart-items__current-price cart-current-price">$129</th>
+                    </tr> 
+                </table>
+            </div>
+            <div class="property">
+                <form action="" class="property__coupon js-form" id="coupon-form">
+                    <div class="property__wrapper">
+                        <input class="property__discount modal__input" type="text"  name="coupon" placeholder="Введите купон">
+                    </div>
+                    
+                    <button type="submit" class="property__apply property__btn" data-submit>Применить купон</button>
+                </form>
+                <button type="button" class="property__update property__btn">Обновить корзину</button>
+            </div>
+            <div class="result">
+                <p class="result__subtotal">Подытог: <span class=" result__subtotal result__subtotal_summary">$129</span></p>
+                <div class="result__wrapper">
+                    <p class="result__total"> Итого: <span class=" result__total result__total_summary">$129</span> </p>
+                    <button class="result__btn">Оформить заказ</button>
+               </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="aside">
+                    <a class="aside__logo" href="index.html"></a>
+                    <div class="aside__right">
+                        <span>© Все права защищены</span>
+                        <a class="aside__link" href="">Политика конфиденциальности</a>
+                        <a class="aside__link" href="">Публичная оферта</a>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link " href="index.html">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="dropdown">
+                            <a class="menu__link " href="shop.html">Магазин</a>
+                            <div class="dropdown-content_bottom">
+                                <a href="#">Пальто</a>
+                                <a href="#">Свитшоты</a>
+                                <a href="#">Кардиганы</a>
+                                <a href="#">Толстовки</a>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="meta">
+                    <div class="meta__contacts">
+                        <a href="tel:+380448235412">+38 (044) 823-54-12</a>
+                        <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                    </div>
+                    <div class="meta__social">
+                        <a class="meta__link" href="" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/instagram (1) 1.svg" alt="" srcset="">
+                        </a>
+                        <a class="meta__link" href="" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/facebook (1) 1.svg" alt="" srcset="">
+                        </a>
+                        <a class="meta__link" href="" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/twitter (1) 1.svg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <a class="meta__pay" href="" rel="nofollow noopener noreferrer" target="_blank">
+                        <img src="img/visa-mastercard 1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

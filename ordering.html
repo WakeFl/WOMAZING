@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа / WOMAZING</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="areaForLoader">
+        <div class="preloader">
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__overlay" id="modal__overlay"></div>
+        <div class="modal__window">
+            <form action="mail.php" class="modal__form  js-form" id="modal-form">
+                <h3 class="modal__title">Заказать обратный звонок</h3>
+                <input type="text" class="modal__input" name="name" placeholder="Имя">
+                <input type="email" class="modal__input" name="email" placeholder="E-mail">
+                <input type="tel" class="modal__input" name="phoneNumber" placeholder="Телефон">
+                <button  type="submit" class="modal__btn" id="close" data-submit >Заказать звонок</button>
+                <button type="button" class="modal__close"></button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-complete">
+        <div class="modal-complete__overlay" id="modal__overlay"></div>
+        <div class="modal-complete__window">
+            <h3 class="modal-complete__title">Отлично! Мы скоро вам перезвоним.</h3>
+            <button type="button" class="modal-complete__btn">Закрыть</button>
+        </div>
+    </div>
+    <header class="header header-goods none-back">
+        <div class="nav-menu">
+            <div class="container container-flex">
+                    <a href="index.html" class="logo"></a>
+                <nav class="main-navigation">
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a class="nav__link " href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item dropdown ">
+                            <a class="nav__link" href="shop.html">Магазин</a>
+                            <div class="dropdown-content">
+                                <a href="#">Пальто</a>
+                                <a href="#">Свитшоты</a>
+                                <a href="#">Кардиганы</a>
+                                <a href="#">Толстовки</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="about.html">О бренде</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="contacts.html">Контакты</a>
+                        </li> 
+                    </ul>
+                </nav>
+                <div class="tel">
+                    <button type="button" class="tel__images">
+                        <img src="img/telephone 1.svg" class="tel__img" alt="">
+                        <img src="img/Grouptel.svg" class="tel__img tel__img_hover" alt="">
+                    </button>
+                    <a class="tel__number" href="tel:+74958235412">+7 (495) 823-54-12</a>
+                </div>
+                <a class="cart" href="сart.html"></a>
+                <div class="burger">
+                    <button type="button" class="burger__btn"><img class="burger__img" src="/img/8497425.png" alt=""></button>
+                    <div class="burger__menu">
+                        <nav class="burger__wrapper">
+                            <ul class="nav burger__nav">
+                                <li class="nav__item">
+                                    <a class="nav__link nav__link_active" href="index.html">Главная</a>
+                                </li>
+                                <li class="nav__item dropdown ">
+                                    <a class="nav__link " href="shop.html">Магазин</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="about.html">О бренде</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="contacts.html">Контакты</a>
+                                </li> 
+                                <li class="nav__item">
+                                    <a class="nav__link" href="cart.html">Корзина</a>
+                                </li> 
+                                <li class="nav__item nav__link_tel">
+                                    <button type="button" class="nav__link tel__link" >Заказать звонок</button>
+                                </li> 
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="offer-order">
+                <h1 class="offer-order__title">Оформление заказа</h1>
+                <ul class="offer-shop__driblets">
+                    <li class="offer-shop__driblet">
+                        <a href="index.html" class="offer-shop__link">Главная</a>
+                    </li>
+                    <li class="offer-shop__driblet offer-shop__driblet_separator">
+                        —
+                    </li>
+                    <li class="offer-shop__driblet">
+                        <span class="offer-shop__link_active">Оформление заказа</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="order">
+        <div class="container">
+            <form action="mail.php" class="ordering js-form" id="order-form">
+                <div class="ordering__personal">
+                    <h3 class="ordering__title">
+                        Данные покупателя
+                    </h3>
+                    <input type="text" class="ordering__input modal__input" name="name" placeholder="Имя">
+                    <input type="email" class="ordering__input modal__input" name="email" placeholder="E-mail">
+                    <input type="tel" class="ordering__input modal__input" name="phoneNumber" placeholder="Телефон">
+                </div>
+                <div class="ordering__total">
+                    <h3 class="ordering__title">
+                        Ваш заказ
+                    </h3>
+                    <table class="ordering__table">
+                        <tr class="ordering__row">
+                            <th class="ordering__column ordering__column_head">Товар</th>
+                            <th class="ordering__column ordering__column_head">Всего</th>
+                        </tr>
+                        <tr class="ordering__row">
+                            <th class="ordering__column">
+                                <span class="ordering__goods">Футболка USA</span>
+                            </th>
+                            <th class="ordering__column ">
+                                <span class="ordering__price">$129</span>
+                            </th>
+                        </tr>
+                        <tr class="ordering__row">
+                            <th class="ordering__column">
+                                <span class="ordering__subtotal">Подытог</span>
+                            </th>
+                            <th class="ordering__column">
+                                <span class="ordering__sub-price">$129</span>
+                            </th>
+                        </tr>
+                        <tr class="ordering__row">
+                            <th class="ordering__column ordering__column_total">
+                                <span class="ordering__all">Итого</span>
+                            </th>
+                            <th class="ordering__column ordering__column_total">
+                                <span class="ordering__all-price">$129</span>
+                            </th>
+                            <th class="ordering__background"></th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ordering__adress">
+                    <h3 class="ordering__title">
+                        Адрес получателя
+                    </h3>
+                    <input type="text" class="ordering__input modal__input" name="country" placeholder="Страна">
+                    <input type="text" class="ordering__input modal__input" name="city" placeholder="Город">
+                    <input type="text" class="ordering__input modal__input" name="street" placeholder="Улица">
+                    <input type="text" class="ordering__input modal__input" name="house" placeholder="Дом">
+                    <input type="text" class="ordering__input modal__input" name="flat" placeholder="Квартира">
+                </div>
+                <div class="ordering__pay">
+                    <h3 class="ordering__title">
+                        Способы оплаты
+                    </h3>
+                    <div class="ordering__payment">
+                        <input class="ordering__radio" type="radio" id="pay1" name="pay" checked value="cash" required>
+                        <label class="ordering__visible" for="pay1"><span></span>Оплата наличными</label>
+
+                        <input class="ordering__radio" type="radio" id="pay2" name="pay" value="cashless" required>
+                        <label class="ordering__visible" for="pay2"><span></span>Безналичный расчет</label>
+                    </div>
+                    <button form="order-form" type="submit" class="ordering__btn" data-submit >Разместить заказ</button>
+                </div>
+                <div class="ordering__comment">
+                    <h3 class="ordering__title">
+                        Комментарии
+                    </h3>
+                    <textarea class="ordering__input modal__input" name="comm" placeholder="Сообщение"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="aside">
+                    <a class="aside__logo" href="index.html"></a>
+                    <div class="aside__right">
+                        <span>© Все права защищены</span>
+                        <a class="aside__link" href="">Политика конфиденциальности</a>
+                        <a class="aside__link" href="">Публичная оферта</a>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link " href="index.html">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="dropdown">
+                            <a class="menu__link" href="shop.html">Магазин</a>
+                            <div class="dropdown-content_bottom">
+                                <a href="#">Пальто</a>
+                                <a href="#">Свитшоты</a>
+                                <a href="#">Кардиганы</a>
+                                <a href="#">Толстовки</a>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="meta">
+                    <div class="meta__contacts">
+                        <a href="tel:+380448235412">+38 (044) 823-54-12</a>
+                        <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                    </div>
+                    <div class="meta__social">
+                        <a class="meta__link" href="" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/instagram (1) 1.svg" alt="" srcset="">
+                        </a>
+                        <a class="meta__link" href="" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/facebook (1) 1.svg" alt="" srcset="">
+                        </a>
+                        <a class="meta__link" href="" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/twitter (1) 1.svg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <a class="meta__pay" href="" rel="nofollow noopener noreferrer" target="_blank">
+                        <img src="img/visa-mastercard 1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

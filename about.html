@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О бренде / WOMAZING</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="areaForLoader">
+        <div class="preloader">
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__overlay" id="modal__overlay"></div>
+        <div class="modal__window">
+            <form action="mail.php" class="modal__form  js-form" id="modal-form">
+                <h3 class="modal__title">Заказать обратный звонок</h3>
+                <input type="text" class="modal__input" name="name" placeholder="Имя">
+                <input type="email" class="modal__input" name="email" placeholder="E-mail">
+                <input type="tel" class="modal__input" name="phoneNumber" placeholder="Телефон">
+                <button  type="submit" class="modal__btn" id="close" data-submit >Заказать звонок</button>
+                <button type="button" class="modal__close"></button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-complete">
+        <div class="modal-complete__overlay" id="modal__overlay"></div>
+        <div class="modal-complete__window">
+            <h3 class="modal-complete__title">Отлично! Мы скоро вам перезвоним.</h3>
+            <button type="button" class="modal-complete__btn">Закрыть</button>
+        </div>
+    </div>
+    <header class="header header-goods none-back">
+        <div class="nav-menu">
+            <div class="container container-flex">
+                    <a href="index.html" class="logo"></a>
+                <nav class="main-navigation">
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item dropdown ">
+                            <a class="nav__link " href="shop.html">Магазин</a>
+                            <div class="dropdown-content">
+                                <a href="#">Пальто</a>
+                                <a href="#">Свитшоты</a>
+                                <a href="#">Кардиганы</a>
+                                <a href="#">Толстовки</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link_active" href="about.html">О бренде</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="contacts.html">Контакты</a>
+                        </li> 
+                    </ul>
+                </nav>
+                <div class="tel">
+                    <button type="button" class="tel__images">
+                        <img src="img/telephone 1.svg" class="tel__img" alt="">
+                        <img src="img/Grouptel.svg" class="tel__img tel__img_hover" alt="">
+                    </button>
+                    <a class="tel__number" href="tel:+74958235412">+7 (495) 823-54-12</a>
+                </div>
+                <a class="cart" href="сart.html"></a>
+                <div class="burger">
+                    <button type="button" class="burger__btn"><img class="burger__img" src="/img/8497425.png" alt=""></button>
+                    <div class="burger__menu">
+                        <nav class="burger__wrapper">
+                            <ul class="nav burger__nav">
+                                <li class="nav__item">
+                                    <a class="nav__link nav__link_active" href="index.html">Главная</a>
+                                </li>
+                                <li class="nav__item dropdown ">
+                                    <a class="nav__link " href="shop.html">Магазин</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="about.html">О бренде</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="contacts.html">Контакты</a>
+                                </li> 
+                                <li class="nav__item">
+                                    <a class="nav__link" href="cart.html">Корзина</a>
+                                </li> 
+                                <li class="nav__item nav__link_tel">
+                                    <button type="button" class="nav__link tel__link" >Заказать звонок</button>
+                                </li> 
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="offer-about">
+                <h1 class="offer-about__title">О бренде</h1>
+                <ul class="offer-shop__driblets">
+                    <li class="offer-shop__driblet">
+                        <a href="index.html" class="offer-shop__link">Главная</a>
+                    </li>
+                    <li class="offer-shop__driblet offer-shop__driblet_separator">
+                        —
+                    </li>
+                    <li class="offer-shop__driblet">
+                        <span class="offer-shop__link_active">О бренде</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="about-content">
+        <div class="container">
+            <div class="idea about-wrapper">
+                <img src="img/Frame 34about1.png" alt="" class="idea__img">
+                <div class="idea__description">
+                    <h3 class="idea__title about-title">Идея и женщина</h3>
+                    <p class="idea__text about-text">Womazing была основана в 2010-ом и стала одной из самых успешных компаний нашей страны. Как и многие итальянские фирмы, Womazing остаётся семейной компанией, хотя ни один из членов семьи не является модельером.</p>
+                    <p class="idea__text about-text">Мы действуем по успешной формуле, прибегая к услугам известных модельеров для создания своих коллекций. Этот метод был описан критиком моды Колином Макдауэллом как форма дизайнерского со-творчества, характерная для ряда итальянских prêt-a-porter компаний. </p>
+                </div>
+            </div>
+            <div class="magic about-wrapper">
+                <div class="magic__description">
+                    <h3 class="magic__title about-title">Магия в деталях</h3>
+                    <p class="magic__text about-text">Первый магазин Womazing был открыт в маленьком городке на севере страны в 2010-ом году. Первая коллекция состояла из двух пальто и костюма, которые были копиями парижских моделей.</p>
+                    <p class="magic__text about-text">
+                        Несмотря на то, что по образованию основательница была адвокатом, ее семья всегда была тесно связана с шитьём (прабабушка основательницы шила одежду для женщин, а мать основала профессиональную школу кроя и шитья). Стремление производить одежду для масс несло в себе большие перспективы, особенно в то время, когда высокая мода по-прежнему доминировала, а рынка качественного prêt-a-porter попросту не существовало. </p>
+                </div>
+                <img src="img/Frame 34about2.png" alt="" class="magic__img">
+            </div>
+            <a href="shop.html" class="about-btn">Перейти в магазин</a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="aside">
+                    <a class="aside__logo" href="index.html"></a>
+                    <div class="aside__right">
+                        <span>© Все права защищены</span>
+                        <a class="aside__link" href="">Политика конфиденциальности</a>
+                        <a class="aside__link" href="">Публичная оферта</a>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link " href="index.html">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="dropdown">
+                            <a class="menu__link" href="shop.html">Магазин</a>
+                            <div class="dropdown-content_bottom">
+                                <a href="#">Пальто</a>
+                                <a href="#">Свитшоты</a>
+                                <a href="#">Кардиганы</a>
+                                <a href="#">Толстовки</a>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link  menu__link_active" href="about.html">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="meta">
+                    <div class="meta__contacts">
+                        <a href="tel:+380448235412">+38 (044) 823-54-12</a>
+                        <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                    </div>
+                    <div class="meta__social">
+                        <a class="meta__link" href="" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/instagram (1) 1.svg" alt="" srcset="">
+                        </a>
+                        <a class="meta__link" href="" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/facebook (1) 1.svg" alt="" srcset="">
+                        </a>
+                        <a class="meta__link" href="" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/twitter (1) 1.svg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <a class="meta__pay" href="" rel="nofollow noopener noreferrer" target="_blank">
+                        <img src="img/visa-mastercard 1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
